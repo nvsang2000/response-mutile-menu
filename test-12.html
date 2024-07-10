@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Click CSS</title>
+    <style>
+        /* Hide the actual checkbox input */
+        #dropdown-toggle {
+            display: none;
+        }
+
+        /* Style the dropdown label */
+        .dropdown-label {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* Style the dropdown content */
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            position: absolute;
+            z-index: 1;
+            margin-top: 5px; /* Added for better spacing */
+        }
+
+        /* Show the dropdown content when the checkbox is checked */
+        #dropdown-toggle:checked + .dropdown-label + .dropdown-content {
+            display: block;
+        }
+
+        /* Additional styling */
+        .dropdown-content p {
+            padding: 10px;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-content p:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <input type="checkbox" id="dropdown-toggle">
+        <label for="dropdown-toggle" class="dropdown-label">Click me</label>
+        <div class="dropdown-content">
+            <p>Dropdown Item 1</p>
+            <p>Dropdown Item 2</p>
+            <p>Dropdown Item 3</p>
+        </div>
+    </div>
+</body>
+</html>

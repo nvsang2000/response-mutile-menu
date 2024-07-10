@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========== Navigation ============ */
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: #ffffff;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo img {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+}
+
+.nav-links .mobile-item {
+  display: none;
+}
+
+.nav-links li:hover .mega-box {
+  top: 80px;
+  opacity: 1;
+  visibility: visible;
+  border-top: 2px solid #d1d5db;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* =========== ANIMATED HEAD ============ */
+
+.animated-border:hover {
+  color: #ecaa00;
+}
+.animated-border {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-border::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 6px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background: #ecaa00;
+  transition: width 0.5s;
+}
+
+.animated-border:hover::after {
+  width: 100%;
+}
+
+/* =========== DROP MEGA MENU ============ */
+.mega-box {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  animation-duration: 0.3s;
+  overflow: auto;
+  height: 80%;
+}
+
+.mega-box .content {
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mega-box .content .row {
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+
+.ddFadeSlow {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* =========== DROP CONTENT ============ */
+.content .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content .row header a {
+  color: #024d90;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+}
+
+.content .row header a:hover {
+  color: #000000;
+}
+
+.content .row .mega-links {
+  text-align: left;
+}
+
+/* =========== LINK CONTENT ============ */
+.mega-links .links {
+  color: #000000;
+  font-size: 20px;
+  display: block;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.mega-links .sub-mega-links,
+.mega-links .sub-mega-links .n-sub-mega-links {
+  margin-left: 20px;
+}
+
+.mega-links .sub-mega-links li a {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.sub-mega-links .n-sub-mega-links li a {
+  font-size: 16px;
+  line-height: 25px;
+  color: #3a3b3c;
+  font-weight: 400;
+}
+
+.sub-links {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row .mega-links li a:hover {
+  color: #024d90;
+}
+
+.wrapper .btn {
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper .btn.close-btn {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+/* =========== DEVICE TABLET AND MOBILE ============ */
+@media screen and (max-width: 970px) {
+    
+  #menu-btn:checked ~ .nav-links {
+    left: 0%;
+  }
+
+  #close-btn:checked ~ .btn.menu-btn {
+    display: block;
+    background-color: #000000;
+  }
+
+  .animated-border:hover {
+    color: #000000;
+  }
+  .animated-border::after {
+    width: 0;
+    height: 0px;
+  }
+
+  .wrapper .btn {
+    display: block;
+  }
+
+  .wrapper .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 80%;
+    top: 0;
+    left: -100%;
+    background: white;
+    display: block;
+    padding: 20px 0px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    border-right: 2px solid #d1d5db;
+  }
+
+  .nav-links li a {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .content .row header a {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .mega-links .sub-mega-links,
+  .mega-links .sub-mega-links .n-sub-mega-links {
+    margin-left: 0px;
+  }
+
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 10px;
+  
+  }
+
+  .nav-links li a {
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  #showPrograms:checked ~ .mega-box {
+    max-height: 100%;
+  }
+
+  .nav-links .desktop-item {
+    display: none;
+  }
+
+  .nav-links .mobile-item {
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .mega-box {
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .mega-box .content {
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+
+  .mega-box .content .row {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2) {
+    border-top: 0px;
+  }
+
+  .content .row .mega-links {
+    border-left: 0px;
+    padding-left: 15px;
+  }
+
+  .row .mega-links li {
+    margin: 0;
+  }
+
+  .content .row header {
+    font-size: 19px;
+  }
+}
+
+nav input {
+  display: none;
+}
+
+.body-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.body-text div {
+  font-size: 45px;
+  font-weight: 600;
+}
