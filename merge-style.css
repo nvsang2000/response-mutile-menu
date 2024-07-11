@@ -68,6 +68,7 @@ nav .wrapper {
 .animated-border:hover {
   color: #ecaa00;
 }
+
 .animated-border {
   position: relative;
   display: inline-block;
@@ -191,27 +192,85 @@ nav .wrapper {
   display: none;
 }
 
-.wrapper .btn.close-btn {
-  position: absolute;
-  right: 30px;
-  top: 10px;
-}
-
 /* =========== DEVICE TABLET AND MOBILE ============ */
 @media screen and (max-width: 970px) {
-    
   #menu-btn:checked ~ .nav-links {
     left: 0%;
   }
+  #showPrograms:checked + .mobile-item::after,
+  #showExplore:checked + .mobile-item::after {
+    content: "-";
+  }
 
-  #close-btn:checked ~ .btn.menu-btn {
-    display: block;
-    background-color: #000000;
+  #showPrograms:checked ~ .mega-box,
+  #showExplore:checked ~ .mega-box {
+    max-height: 100%;
+    border-top: 1px solid #d1d5db;
+  }
+
+  /* =========== NAVIGATION ============ */
+  nav .wrapper {
+    padding: 0px 0px 0px 0px;
+    line-height: 60px;
+  }
+
+  .mega-box {
+    border-top: none;
+  }
+
+  .nav-links {
+    padding: 0px;
+  }
+
+  .nav-links li:hover .mega-box {
+    box-shadow: none;
+  }
+
+  .nav-links li a {
+    color: #000000;
+    font-size: 18px;
+    padding: 0px 0px;
+  }
+
+  .nav-links .li-head,
+  .content .row header {
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .nav-links .li-head a,
+  .nav-links .li-head label {
+    margin-left: 10px;
+  }
+
+  .nav-links .mobile-item {
+    font-size: 18px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .nav-links .mobile-item::after {
+    content: "+";
+    font-size: 24px;
+    font-weight: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 20px;
   }
 
   .animated-border:hover {
     color: #000000;
   }
+
   .animated-border::after {
     width: 0;
     height: 0px;
@@ -230,85 +289,70 @@ nav .wrapper {
     left: -100%;
     background: white;
     display: block;
-    padding: 20px 0px;
+    padding: 0px 0px 0px 0px;
     overflow-y: auto;
     transition: all 0.3s ease;
     border-right: 2px solid #d1d5db;
   }
 
-  .nav-links li a {
-    color: #000000;
-    font-size: 18px;
-  }
 
-  .content .row header a {
-    color: #000000;
-    font-size: 18px;
-  }
 
   .mega-links .sub-mega-links,
   .mega-links .sub-mega-links .n-sub-mega-links {
     margin-left: 0px;
   }
 
-  /* custom scroll bar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  .nav-links li {
-    margin: 10px 10px;
-  
-  }
-
-  .nav-links li a {
-    padding: 0 20px;
-    display: block;
-    font-size: 20px;
-    font-weight: 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  #showPrograms:checked ~ .mega-box {
-    max-height: 100%;
-  }
-
   .nav-links .desktop-item {
     display: none;
   }
 
-  .nav-links .mobile-item {
-    display: block;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 500;
-    padding-left: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  .nav-links li:hover .mega-box {
+    border-top: none;
   }
 
   .mega-box {
+    border-top: none;
     position: static;
-    top: 65px;
     opacity: 1;
     visibility: visible;
-    padding: 0 20px;
+    padding: 0 0px;
     max-height: 0px;
     overflow: hidden;
     transition: all 0.3s ease;
   }
 
+ /* =========== MEGE BOX CONTENT ============ */
   .mega-box .content {
     box-shadow: none;
     flex-direction: column;
-    padding: 20px 20px 0 20px;
+    padding: 0px 0px;
+  }
+
+  .content .row header a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin-left: 20px;
+  }
+
+  .mega-box .content .mega-links .links {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin-left: 40px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .sub-links {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin-left: 40px;
+    padding: 10px 0px 10px 0px;
   }
 
   .mega-box .content .row {
     width: 100%;
-    margin-bottom: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .mega-box .content .row:nth-child(1),
@@ -316,18 +360,7 @@ nav .wrapper {
     border-top: 0px;
   }
 
-  .content .row .mega-links {
-    border-left: 0px;
-    padding-left: 15px;
-  }
-
-  .row .mega-links li {
-    margin: 0;
-  }
-
-  .content .row header {
-    font-size: 19px;
-  }
+  
 }
 
 nav input {
