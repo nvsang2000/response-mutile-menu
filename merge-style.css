@@ -105,10 +105,10 @@ nav .wrapper {
 }
 
 .mega-box .content {
-  padding: 25px 20px;
+  padding: 20px 20px;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .mega-box .content .row {
