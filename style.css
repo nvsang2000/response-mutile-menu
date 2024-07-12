@@ -26,6 +26,11 @@
 }
 
 #header-bar.scrolled {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: white;
 }
 
@@ -180,7 +185,7 @@
 .mega-links .sub-mega-links li a {
   font-size: 17px;
   font-weight: 600;
-  /* line-height: 25px; */
+  line-height: 20px;
 }
 
 .sub-mega-links .n-sub-mega-links li a {
@@ -190,15 +195,9 @@
   font-weight: 400;
 }
 
-
-.head-links {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
- .n-sub-links, .sub-links, .links {
+.n-sub-links,
+.sub-links,
+.links {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -218,18 +217,34 @@
 
 /* =========== DEVICE TABLET AND MOBILE ============ */
 @media screen and (max-width: 970px) {
+  /* =========== HANDLE DISPLAY============ */
   #menu-btn:checked ~ .nav-links {
     left: 0%;
   }
-  #showPrograms:checked + .mobile-item::after,
-  #showExplore:checked + .mobile-item::after {
+  .nav-links {
+    left: 0%;
+  }
+  #show-p:checked + .mobile-item::after,
+  #show-exp:checked + .mobile-item::after {
     content: "-";
   }
 
-  #showPrograms:checked ~ .mega-box,
-  #showExplore:checked ~ .mega-box {
+  #show-p:checked ~ .mega-box,
+  #show-exp:checked ~ .mega-box {
     max-height: 100%;
     border-top: 1px solid #d1d5db;
+  }
+
+  #show-aca:checked ~ .mega-links {
+    display: block;
+  }
+
+  .mega-links,
+  .sub-mega-links,
+  .n-sub-mega-links,
+  .nav-links .desktop-item,
+  .check-links {
+    display: none;
   }
 
   /* =========== NAVIGATION ============ */
@@ -240,6 +255,8 @@
 
   .mega-box {
     border-top: none;
+    margin-top: 0px;
+    overflow: auto;
   }
 
   .nav-links {
@@ -274,7 +291,6 @@
     align-items: center;
     cursor: pointer;
     text-align: left;
-    font-weight: 500;
   }
 
   .nav-links .mobile-item::after {
@@ -290,7 +306,6 @@
     height: 40px;
     width: 20px;
   }
-
 
   .wrapper .btn {
     display: block;
@@ -311,17 +326,6 @@
     border-right: 2px solid #d1d5db;
   }
 
-
-
-  .mega-links .sub-mega-links,
-  .mega-links .sub-mega-links .n-sub-mega-links {
-    margin-left: 0px;
-  }
-
-  .nav-links .desktop-item {
-    display: none;
-  }
-
   .nav-links li:hover .mega-box {
     border-top: none;
   }
@@ -337,7 +341,7 @@
     transition: all 0.3s ease;
   }
 
- /* =========== MEGE BOX CONTENT ============ */
+  /* =========== MEGE BOX CONTENT ============ */
   .mega-box .content {
     box-shadow: none;
     flex-direction: column;
@@ -375,11 +379,8 @@
   .mega-box .content .row:nth-child(2) {
     border-top: 0px;
   }
-
-  
 }
 
 #header-bar input {
   display: none;
 }
-

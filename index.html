@@ -37,18 +37,22 @@
           <li class="li-head"><a href="#" class="animated-border">HOME</a></li>
           <li class="li-head">
             <a href="#" class="desktop-item animated-border">PROGRAMS</a>
-            <input type="checkbox" id="showPrograms" />
-            <label for="showPrograms" class="mobile-item">PROGRAMS</label>
+            <input type="checkbox" id="show-p" />
+            <label for="show-p" class="mobile-item">PROGRAMS</label>
             <div class="mega-box ddFadeSlow">
               <div class="content">
                 <div class="row">
                   <header><a href="#" class="head-links">Assessment</a></header>
                 </div>
                 <div class="row">
-                  <header><a href="#">Academics</a></header>
+                  <header><a href="#" class="check-links">Academics</a></header>
+                  <input type="checkbox" id="show-aca" />
+                  <label for="show-aca" class="mobile-item">Academics</label>
                   <ul class="mega-links">
                     <li>
                       <a href="#" class="links">School of Nursing</a>
+                      <input type="checkbox" id="show-p-son" />
+                      <label for="show-p-SON" class="mobile-item">School of Nursing</label>
                       <ul class="sub-mega-links">
                         <li>
                           <a href="#" class="sub-links"
@@ -246,8 +250,8 @@
             </div>
           </li>
           <li class="li-head">
-            <input type="checkbox" id="showExplore" />
-            <label for="showExplore" class="mobile-item">EXPLORE</label>
+            <input type="checkbox" id="show-exp" />
+            <label for="show-exp" class="mobile-item">EXPLORE</label>
             <a href="#" class="desktop-item animated-border">EXPLORE</a>
             <div class="mega-box ddFadeSlow">
               <div class="content">
@@ -332,7 +336,7 @@
       };
 
       function scrollFunction() {
-        var navbar = document.getElementById("header-bar");
+        const navbar = document.getElementById("header-bar");
         if (
           document.body.scrollTop > 50 ||
           document.documentElement.scrollTop > 50
