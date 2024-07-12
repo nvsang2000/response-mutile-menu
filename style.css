@@ -43,7 +43,7 @@
 
 .wrapper .logo img {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .wrapper .nav-links {
@@ -90,7 +90,7 @@
 
 .animated-border::after {
   content: "";
-  position: absolute;
+  position: static;
   width: 0;
   height: 6px;
   display: block;
@@ -98,6 +98,7 @@
   left: 0;
   background: #ecaa00;
   transition: width 0.5s;
+  margin-top: -6px;
 }
 
 .animated-border:hover::after {
@@ -116,6 +117,7 @@
   animation-duration: 0.3s;
   overflow: auto;
   height: 80%;
+  margin-top: -10px;
 }
 
 .mega-box .content {
@@ -178,7 +180,7 @@
 .mega-links .sub-mega-links li a {
   font-size: 17px;
   font-weight: 600;
-  line-height: 25px;
+  /* line-height: 25px; */
 }
 
 .sub-mega-links .n-sub-mega-links li a {
@@ -188,7 +190,15 @@
   font-weight: 400;
 }
 
-.sub-links {
+
+.head-links {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+ .n-sub-links, .sub-links, .links {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -281,14 +291,6 @@
     width: 20px;
   }
 
-  .animated-border:hover {
-    color: #000000;
-  }
-
-  .animated-border::after {
-    width: 0;
-    height: 0px;
-  }
 
   .wrapper .btn {
     display: block;
@@ -381,17 +383,3 @@
   display: none;
 }
 
-.body-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  padding: 0 30px;
-}
-
-.body-text div {
-  font-size: 45px;
-  font-weight: 600;
-}
