@@ -217,7 +217,7 @@
 
 /* =========== DEVICE TABLET AND MOBILE ============ */
 @media screen and (max-width: 970px) {
-  /* =========== HANDLE DISPLAY============ */
+/* =========== HANDLE DISPLAY============ */
   #menu-btn:checked ~ .nav-links {
     left: 0%;
   }
@@ -348,7 +348,7 @@
     padding: 0px 0px;
   }
 
-  .content .row header a {
+  .content .row header a, .content .row label {
     font-size: 18px;
     font-weight: 400;
     color: #333;
