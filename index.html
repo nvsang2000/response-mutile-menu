@@ -1,351 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body>
-    <nav id="header-bar" class="nav">
-      <div class="wrapper">
-        <div class="logo">
-          <img
-            src="http://localhost/wordpress/wp-content/uploads/2024/07/american-university-of-health-sciences-logo-450x60-1.png"
-            alt=""
-            class="wp-image-30"
-            style="object-fit: cover; width: 300px; height: 40px"
-          />
-        </div>
-        <input type="checkbox" name="slider" id="menu-btn" />
-        <label for="menu-btn" class="btn menu-btn">
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="black">
-              <path d="m 1 2 h 14 v 2 h -14 z m 0 0" />
-              <path d="m 1 7 h 14 v 2 h -14 z m 0 0" />
-              <path d="m 1 12 h 14 v 2 h -14 z m 0 0" />
-            </g>
-          </svg>
-        </label>
-        <ul class="nav-links">
-          <li class="li-head"><a href="#" class="animated-border">HOME</a></li>
-          <li class="li-head">
-            <a href="#" class="desktop-item animated-border">PROGRAMS</a>
-            <input type="checkbox" id="show-p" />
-            <label for="show-p" class="mobile-item">PROGRAMS</label>
-            <div class="mega-box ddFadeSlow">
-              <div class="content">
-                <div class="row">
-                  <header><a href="#" class="head-links">Assessment</a></header>
-                </div>
-                <div class="row">
-                  <header><a href="#" class="check-links">Academics</a></header>
-                  <input type="checkbox" id="show-aca" />
-                  <label for="show-aca" class="mobile-item" style="margin-left: 20px;">Academics</label>
-                  <ul class="mega-links">
-                    <li>
-                      <a href="#" class="links">School of Nursing</a>
-                      <input type="checkbox" id="show-p-son" />
-                      <label for="show-p-SON" class="mobile-item">School of Nursing</label>
-                      <ul class="sub-mega-links">
-                        <li>
-                          <a href="#" class="sub-links"
-                            >Master of Science in Nursing</a
-                          >
-                          <ul class="n-sub-mega-links">
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >MSN Accreditation and Approvals</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >MSN Academic Program</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >MSN Tuition and Fees</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links">MSN Admissions</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >BSN – Bachelor of Science in Nursing</a
-                          >
-                          <ul class="n-sub-mega-links">
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >BSN Academic Program</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >BSN Course Descriptions</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links">RN to BSN</a>
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links">BSN Admissions</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#" class="sub-links">FAQ</a></li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >School of Nursing Resources</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#" class="links">School of Pharmacy</a>
-                      <ul class="sub-mega-links">
-                        <li>
-                          <a href="#" class="sub-links"
-                            >Master of Science in Nursing</a
-                          >
-                          <ul class="n-sub-mega-links">
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >MSN Accreditation and Approvals</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >MSN Academic Program</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >MSN Tuition and Fees</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links">MSN Admissions</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >BSN – Bachelor of Science in Nursing</a
-                          >
-                          <ul class="n-sub-mega-links">
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >BSN Academic Program</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links"
-                                >BSN Course Descriptions</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links">RN to BSN</a>
-                            </li>
-                            <li>
-                              <a href="#" class="n-sub-links">BSN Admissions</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#" class="sub-links">FAQ</a></li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >School of Nursing Resources</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#" class="links">School of Clinical Research</a>
-                    </li>
-                    <li><a href="#" class="links">General Education</a></li>
-                    <li><a href="#" class="links">Library</a></li>
-                    <li><a href="#" class="links">Research</a></li>
-                    <li><a href="#" class="links">University Catalog</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header><a href="#">Admissions</a></header>
-                  <ul class="mega-links">
-                    <li><a class="links">Request Information</a></li>
-                    <li><a class="links">Open House Registration</a></li>
-                    <li>
-                      <a class="links">Applying For AUHS</a>
-                      <ul class="sub-mega-links">
-                        <li>
-                          <a href="#" class="sub-links">Admission Process</a>
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >Enrollment Application Form</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links">Transfer of Credit</a>
-                        </li>
-                        <li><a href="#" class="sub-links">Financial Aid</a></li>
-                        <li><a href="#" class="sub-links">Cares Act</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#" class="links">International Application</a>
-                    </li>
-                    <li><a href="#" class="links">Dates and Deadline</a></li>
-                    <li><a href="#" class="links">Alumni Testimonial</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header><a href="#">Faculties</a></header>
-                  <ul class="mega-links">
-                    <li><a href="#" class="links">MSN Faculty</a></li>
-                    <li><a href="#" class="links">GE Faculty</a></li>
-                    <li><a href="#" class="links">DPS Faculty</a></li>
-                    <li><a href="#" class="links">DCAS Faculty</a></li>
-                    <li><a href="#" class="links">SOCR Faculty</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header>
-                    <a href="#" class="head-links">Campus Life</a>
-                  </header>
-                  <ul class="mega-links">
-                    <li>
-                      <a href="#" class="links">Student Services</a>
-                      <ul class="sub-mega-links">
-                        <li>
-                          <a href="#" class="sub-links">Resources</a>
-                          <ul class="n-sub-mega-links">
-                            <li>
-                              <a href="#" class="n-sub-links">
-                                Disability Resources</a
-                              >
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links">Career Services</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#" class="links">Community Engagement</a></li>
-                    <li><a href="#" class="links">Campus Safety</a></li>
-                    <li><a href="#" class="links">Events</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="li-head">
-            <input type="checkbox" id="show-exp" />
-            <label for="show-exp" class="mobile-item">EXPLORE</label>
-            <a href="#" class="desktop-item animated-border">EXPLORE</a>
-            <div class="mega-box ddFadeSlow">
-              <div class="content">
-                <div class="row">
-                  <header><a href="#">GOD</a></header>
-                  <ul class="mega-links">
-                    <li>
-                      <a href="#">Statement of Faith</a>
-                    </li>
-                    <li><a href="#">Faith In Action</a></li>
-                    <li><a href="#">Morning Dew</a></li>
-                    <li><a href="#">Noon Day Prayer</a></li>
-                    <li><a href="#">Morning Too</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header><a href="#">About</a></header>
-                  <ul class="mega-links">
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Mission Philosophy Goals</a></li>
-                    <li><a href="#">AUHS Accreditations</a></li>
-                    <li><a href="#">Board of Trustees</a></li>
-                    <li>
-                      <a href="#">AUHS Staff</a>
-                      <ul class="sub-mega-links">
-                        <li>
-                          <a href="#" class="sub-links">University President</a>
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >University Administrator</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" class="sub-links"
-                            >Office of Institutional Research</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Employment</a></li>
-                    <li><a href="#">Consumer Information</a></li>
-                    <li><a href="#">AUHS Privacy Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header><a href="#">News</a></header>
-                  <ul class="mega-links">
-                    <li><a href="#">University News</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="li-head">
-            <a href="#" class="animated-border">FOUNDATION</a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav id="header-bar" class="nav">
+    <div class="wrapper">
+      <div class="logo">
+        <img
+          src="http://localhost/wordpress/wp-content/uploads/2024/07/american-university-of-health-sciences-logo-450x60-1.png"
+          alt="" class="wp-image-30" style="object-fit: cover; width: 300px; height: 40px" />
       </div>
-    </nav>
-
-    <div>
-      <video
-        class="video-container"
-        playsinline="true"
-        autoplay="autoplay"
-        muted="true"
-        loop="loop"
-      >
-        <source
-          src="http://localhost/wordpress/wp-content/uploads/2024/07/auhs-pc-explore.webm"
-          type="video/mp4"
-        />
-      </video>
+      <input type="checkbox" name="slider" id="menu-btn" />
+      <label for="menu-btn" class="btn menu-btn">
+        <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <g fill="black">
+            <path d="m 1 2 h 14 v 2 h -14 z m 0 0" />
+            <path d="m 1 7 h 14 v 2 h -14 z m 0 0" />
+            <path d="m 1 12 h 14 v 2 h -14 z m 0 0" />
+          </g>
+        </svg>
+      </label>
+      <ul class="nav-links">
+        <li class="li-head"><a href="#" class="animated-border">HOME</a></li>
+        <li class="li-head">
+          <a href="#" class="desktop-item animated-border">PROGRAMS</a>
+          <input type="checkbox" id="show-p" />
+          <label for="show-p" class="mobile-item">PROGRAMS</label>
+          <div class="mega-box ddFadeSlow">
+            <div class="content">
+              <div class="row">
+                <header class="head-links"><a href="#">Assessment</a></header>
+              </div>
+              <div class="row">
+                <header class="head-links"><a href="#" class="desktop-item head-links">Academics</a></header>
+                <label for="show-aca" class="mobile-item" style="margin-left: 20px; ">Academics</label>
+                <input type="checkbox" id="show-aca" />
+                <ul class="mega-links">
+                  <li>
+                    <a href="#" class="links desktop-item">School of Nursing</a>
+                    <label for="show-aca-son" class="mobile-item" style="margin-left: 40px;">School of Nursing</label>
+                    <input type="checkbox" id="show-aca-son" />
+                    <ul class="sub-mega-links">
+                      <li>
+                        <a href="#" class="links desktop-item">Master of Science in Nursing</a>
+                        <label for="show-aca-son-mos" class="mobile-item" style="margin-left: 40px;">Master of Science
+                          in Nursing</label>
+                        <input type="checkbox" id="show-aca-son-mos" />
+                        <ul class="n-sub-mega-links">
+                          <li>
+                            <a href="#" class="n-sub-links">MSN Accreditation and Approvals</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">MSN Academic Program</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">MSN Tuition and Fees</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">MSN Admissions</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">BSN – Bachelor of Science in Nursing</a>
+                        <ul class="n-sub-mega-links">
+                          <li>
+                            <a href="#" class="n-sub-links">BSN Academic Program</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">BSN Course Descriptions</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">RN to BSN</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">BSN Admissions</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="sub-links">FAQ</a></li>
+                      <li>
+                        <a href="#" class="sub-links">School of Nursing Resources</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="links desktop-item">School of Pharmacy</a>
+                    <label for="show-aca-sop" class="mobile-item" style="margin-left: 40px;">School of Pharmacy</label>
+                    <input type="checkbox" id="show-aca-sop" />
+                    <ul class="sub-mega-links">
+                      <li>
+                        <a href="#" class="sub-links">Doctor of Pharmacy</a>
+                        <ul class="n-sub-mega-links">
+                          <li>
+                            <a href="#" class="n-sub-links">PharmD Curriculum</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">PharmD Course Descriptions</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">Department of Pharmaceutical Science</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">Department of Clinical and Administrative Sciences</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">Interprofessional Education</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">PharmD Admissions Info</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">Bachelor of Science in Pharmaceutical Sciences</a>
+                        <ul class="n-sub-mega-links">
+                          <li>
+                            <a href="#" class="n-sub-links">BSPS FAQ</a>
+                          </li>
+                          <li>
+                            <a href="#" class="n-sub-links">Pharmacy Technician Certificates</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="sub-links">Meet the Dean</a></li>
+                      <li>
+                        <a href="#" class="sub-links">Pharmacy Student Affairs</a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">PharmD Student Handbook</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="links desktop-item">School of Clinical Research</a>
+                    <label for="show-aca-socr" class="mobile-item" style="margin-left: 40px;">School of Clinical
+                      Research</label>
+                    <input type="checkbox" id="show-aca-socr" />
+                    <ul class="sub-mega-links">
+                      <li><a href="#" class="sub-links">Meet the Dean (SOCR)</a></li>
+                      <li>
+                        <a href="#" class="sub-links">Meet the alumni (SOCR)</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="links desktop-item">General Education</a>
+                    <label for="show-aca-ge" class="mobile-item" style="margin-left: 40px;">General Education</label>
+                    <input type="checkbox" id="show-aca-ge" />
+                    <ul class="sub-mega-links">
+                      <li><a href="#" class="sub-links">Meet the Dean (SOCR)</a></li>
+                      <li>
+                        <a href="#" class="sub-links">Meet the alumni (SOCR)</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="links">Library</a></li>
+                  <li>
+                    <a href="#" class="links desktop-item">Research</a>
+                    <label for="show-aca-rs" class="mobile-item" style="margin-left: 40px;">Research</label>
+                    <input type="checkbox" id="show-aca-rs" />
+                    <ul class="sub-mega-links">
+                      <li><a href="#" class="sub-links">Institutional Review Board (IRB)</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="links">University Catalog</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header><a href="#">Admissions</a></header>
+                <ul class="mega-links">
+                  <li><a class="links">Request Information</a></li>
+                  <li><a class="links">Open House Registration</a></li>
+                  <li>
+                    <a class="links">Applying For AUHS</a>
+                    <ul class="sub-mega-links">
+                      <li>
+                        <a href="#" class="sub-links">Admission Process</a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">Enrollment Application Form</a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">Transfer of Credit</a>
+                      </li>
+                      <li><a href="#" class="sub-links">Financial Aid</a></li>
+                      <li><a href="#" class="sub-links">Cares Act</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="links">International Application</a>
+                  </li>
+                  <li><a href="#" class="links">Dates and Deadline</a></li>
+                  <li><a href="#" class="links">Alumni Testimonial</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header><a href="#">Faculties</a></header>
+                <ul class="mega-links">
+                  <li><a href="#" class="links">MSN Faculty</a></li>
+                  <li><a href="#" class="links">GE Faculty</a></li>
+                  <li><a href="#" class="links">DPS Faculty</a></li>
+                  <li><a href="#" class="links">DCAS Faculty</a></li>
+                  <li><a href="#" class="links">SOCR Faculty</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>
+                  <a href="#" class="head-links">Campus Life</a>
+                </header>
+                <ul class="mega-links">
+                  <li>
+                    <a href="#" class="links">Student Services</a>
+                    <ul class="sub-mega-links">
+                      <li>
+                        <a href="#" class="sub-links">Resources</a>
+                        <ul class="n-sub-mega-links">
+                          <li>
+                            <a href="#" class="n-sub-links">
+                              Disability Resources</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">Career Services</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="links">Community Engagement</a></li>
+                  <li><a href="#" class="links">Campus Safety</a></li>
+                  <li><a href="#" class="links">Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="li-head">
+          <input type="checkbox" id="show-exp" />
+          <label for="show-exp" class="mobile-item">EXPLORE</label>
+          <a href="#" class="desktop-item animated-border">EXPLORE</a>
+          <div class="mega-box ddFadeSlow">
+            <div class="content">
+              <div class="row">
+                <header><a href="#">GOD</a></header>
+                <ul class="mega-links">
+                  <li>
+                    <a href="#">Statement of Faith</a>
+                  </li>
+                  <li><a href="#">Faith In Action</a></li>
+                  <li><a href="#">Morning Dew</a></li>
+                  <li><a href="#">Noon Day Prayer</a></li>
+                  <li><a href="#">Morning Too</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header><a href="#">About</a></header>
+                <ul class="mega-links">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Mission Philosophy Goals</a></li>
+                  <li><a href="#">AUHS Accreditations</a></li>
+                  <li><a href="#">Board of Trustees</a></li>
+                  <li>
+                    <a href="#">AUHS Staff</a>
+                    <ul class="sub-mega-links">
+                      <li>
+                        <a href="#" class="sub-links">University President</a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">University Administrator</a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub-links">Office of Institutional Research</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Employment</a></li>
+                  <li><a href="#">Consumer Information</a></li>
+                  <li><a href="#">AUHS Privacy Policy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header><a href="#">News</a></header>
+                <ul class="mega-links">
+                  <li><a href="#">University News</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="li-head">
+          <a href="#" class="animated-border">FOUNDATION</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Custom Js -->
-    <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
+  <div>
+    <video class="video-container" playsinline="true" autoplay="autoplay" muted="true" loop="loop">
+      <source src="http://localhost/wordpress/wp-content/uploads/2024/07/auhs-pc-explore.webm" type="video/mp4" />
+    </video>
+  </div>
 
-      function scrollFunction() {
-        const navbar = document.getElementById("header-bar");
-        if (
-          document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50
-        ) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
+  <!-- Custom Js -->
+  <script>
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      const navbar = document.getElementById("header-bar");
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
