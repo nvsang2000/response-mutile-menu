@@ -27,48 +27,72 @@
         </svg>
       </label>
       <ul class="nav-links">
-        <li class="li-head"><a href="#" class="animated-border">HOME</a></li>
+        <li class="li-head">
+          <a href="#" class="animated-border link-head"><span>HOME</span></a>
+          <hr class="hr-header">
+        </li>
         <li class="li-head">
           <a href="#" class="desktop-item animated-border">PROGRAMS</a>
           <input type="checkbox" id="show-p" />
-          <label for="show-p" class="mobile-item">PROGRAMS</label>
+          <label for="show-p" class="mobile-item link-head">
+            <a href="#">PROGRAMS</a>
+          </label>
+          <hr class="hr-header">
           <div class="mega-box ddFadeSlow">
             <div class="content">
               <div class="row">
-                <header class="head-links"><a href="#">Assessment</a></header>
+                <header class="desktop-item"><a href="#">Assessment</a></header>
+                <a href="#" class="item link-head-lv2">Assessment</a>
+                <hr class="hr-header">
               </div>
               <div class="row">
-                <header class="head-links"><a href="#" class="desktop-item head-links">Academics</a></header>
-                <label for="show-aca" class="mobile-item" style="margin-left: 20px; ">Academics</label>
+                <header><a href="#" class="desktop-item">Academics</a></header>
                 <input type="checkbox" id="show-aca" />
+                <label for="show-aca" class="mobile-item link-head-lv2">
+                  <a href="#" class="links">Academics</a>
+                </label>
+                <hr class="hr-header">
                 <ul class="mega-links">
                   <li>
                     <a href="#" class="links desktop-item">School of Nursing</a>
-                    <label for="show-aca-son" class="mobile-item" style="margin-left: 40px;">School of Nursing</label>
                     <input type="checkbox" id="show-aca-son" />
+                    <label for="show-aca-son" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">School of Nursing</a>
+                    </label>
+                    <hr class="hr-header">
                     <ul class="sub-mega-links">
                       <li>
                         <a href="#" class="links desktop-item">Master of Science in Nursing</a>
-                        <label for="show-aca-son-mos" class="mobile-item" style="margin-left: 40px;">Master of Science
-                          in Nursing</label>
-                        <input type="checkbox" id="show-aca-son-mos" />
+                        <input type="checkbox" id="show-aca-son-1" />
+                        <label for="show-aca-son-1" class="mobile-item link-head-lv3">
+                          <a href="#" class="links">Master of Science in Nursing</a>
+                        </label>
+                        <hr class="hr-header">
                         <ul class="n-sub-mega-links">
                           <li>
                             <a href="#" class="n-sub-links">MSN Accreditation and Approvals</a>
+                            <hr class="hr-header">
                           </li>
                           <li>
                             <a href="#" class="n-sub-links">MSN Academic Program</a>
+                            <hr class="hr-header">
                           </li>
                           <li>
                             <a href="#" class="n-sub-links">MSN Tuition and Fees</a>
+                            <hr class="hr-header">
                           </li>
                           <li>
                             <a href="#" class="n-sub-links">MSN Admissions</a>
+                            <hr class="hr-header">
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#" class="sub-links">BSN – Bachelor of Science in Nursing</a>
+                        <a href="#" class="links desktop-item">BSN – Bachelor of Science in Nursing</a>
+                        <input type="checkbox" id="show-aca-son-2" />
+                        <label for="show-aca-son-2" class="mobile-item" style="margin-left: 40px;">
+                          <div class="text-ellips">BSN – Bachelor of Science in Nursing</div>
+                        </label>
                         <ul class="n-sub-mega-links">
                           <li>
                             <a href="#" class="n-sub-links">BSN Academic Program</a>
@@ -92,11 +116,18 @@
                   </li>
                   <li>
                     <a href="#" class="links desktop-item">School of Pharmacy</a>
-                    <label for="show-aca-sop" class="mobile-item" style="margin-left: 40px;">School of Pharmacy</label>
                     <input type="checkbox" id="show-aca-sop" />
+                    <label for="show-aca-sop" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">School of Pharmacy</a>
+                    </label>
+                    <hr class="hr-header">
                     <ul class="sub-mega-links">
                       <li>
-                        <a href="#" class="sub-links">Doctor of Pharmacy</a>
+                        <a href="#" class="links desktop-item">Doctor of Pharmacy</a>
+                        <input type="checkbox" id="show-aca-sop-1" />
+                        <label for="show-aca-sop-1" class="mobile-item" style="margin-left: 40px;">
+                          <div class="text-ellips">Doctor of Pharmacy</div>
+                         </label>
                         <ul class="n-sub-mega-links">
                           <li>
                             <a href="#" class="n-sub-links">PharmD Curriculum</a>
@@ -119,7 +150,11 @@
                         </ul>
                       </li>
                       <li>
-                        <a href="#" class="sub-links">Bachelor of Science in Pharmaceutical Sciences</a>
+                        <a href="#" class="links desktop-item">Bachelor of Science in Pharmaceutical Sciences</a>
+                        <input type="checkbox" id="show-aca-sop-2" />
+                        <label for="show-aca-sop-2" class="mobile-item" style="margin-left: 40px;">
+                          <div class="text-ellips">Bachelor of Science in Pharmaceutical Sciences</div>
+                         </label>
                         <ul class="n-sub-mega-links">
                           <li>
                             <a href="#" class="n-sub-links">BSPS FAQ</a>
@@ -140,9 +175,11 @@
                   </li>
                   <li>
                     <a href="#" class="links desktop-item">School of Clinical Research</a>
-                    <label for="show-aca-socr" class="mobile-item" style="margin-left: 40px;">School of Clinical
-                      Research</label>
                     <input type="checkbox" id="show-aca-socr" />
+                    <label for="show-aca-socr" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">School of Clinical Research</a>
+                    </label>
+                    <hr class="hr-header">
                     <ul class="sub-mega-links">
                       <li><a href="#" class="sub-links">Meet the Dean (SOCR)</a></li>
                       <li>
@@ -152,34 +189,58 @@
                   </li>
                   <li>
                     <a href="#" class="links desktop-item">General Education</a>
-                    <label for="show-aca-ge" class="mobile-item" style="margin-left: 40px;">General Education</label>
                     <input type="checkbox" id="show-aca-ge" />
+                    <label for="show-aca-ge" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">General Education</a>
+                    </label>
+                    <hr class="hr-header">
                     <ul class="sub-mega-links">
-                      <li><a href="#" class="sub-links">Meet the Dean (SOCR)</a></li>
-                      <li>
-                        <a href="#" class="sub-links">Meet the alumni (SOCR)</a>
-                      </li>
+                      <li><a href="#" class="sub-links">GE Courses</a></li> 
                     </ul>
                   </li>
-                  <li><a href="#" class="links">Library</a></li>
+                  <li>
+                    <a href="#" class="links desktop-item">Library</a>
+                    <label for="show-aca-rs" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">Library</a>
+                    </label>
+                    <hr class="hr-header"/>
+                  </li>
                   <li>
                     <a href="#" class="links desktop-item">Research</a>
-                    <label for="show-aca-rs" class="mobile-item" style="margin-left: 40px;">Research</label>
                     <input type="checkbox" id="show-aca-rs" />
+                    <label for="show-aca-rs" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">Research</a>
+                    </label>
+                    <hr class="hr-header">
                     <ul class="sub-mega-links">
                       <li><a href="#" class="sub-links">Institutional Review Board (IRB)</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="links">University Catalog</a></li>
+                  <li> 
+                    <a href="#" class="links desktop-item">University Catalog</a>
+                    <label for="show-aca-rs" class="mobile-item link-head-lv3">
+                      <a href="#" class="links">University Catalog</a>
+                    </label>
+                    <hr class="hr-header"/>
+                  </li>
                 </ul>
               </div>
               <div class="row">
-                <header><a href="#">Admissions</a></header>
+                <header><a href="#" class="desktop-item">Admissions</a></header>
+                <input type="checkbox" id="show-ad" />
+                <label for="show-ad" class="mobile-item link-head-lv2">
+                  <a href="#" class="links">Admissions</a>
+                </label>
+                <hr class="hr-header">
                 <ul class="mega-links">
                   <li><a class="links">Request Information</a></li>
                   <li><a class="links">Open House Registration</a></li>
                   <li>
-                    <a class="links">Applying For AUHS</a>
+                    <a href="#" class="links desktop-item">Applying For AUHS</a>
+                    <input type="checkbox" id="show-ad-aoa" />
+                    <label for="show-ad-aoa" class="mobile-item" style="margin-left: 40px;">
+                      <div class="text-ellips">Applying For AUHS</div>
+                    </label>
                     <ul class="sub-mega-links">
                       <li>
                         <a href="#" class="sub-links">Admission Process</a>
@@ -202,7 +263,12 @@
                 </ul>
               </div>
               <div class="row">
-                <header><a href="#">Faculties</a></header>
+                <header><a href="#" class="desktop-item">Faculties</a></header>
+                <input type="checkbox" id="show-f" />
+                <label for="show-f"  class="mobile-item link-head-lv2">
+                  <a href="#" class="links">Faculties</a>
+                </label>
+                <hr class="hr-header">
                 <ul class="mega-links">
                   <li><a href="#" class="links">MSN Faculty</a></li>
                   <li><a href="#" class="links">GE Faculty</a></li>
@@ -212,15 +278,26 @@
                 </ul>
               </div>
               <div class="row">
-                <header>
-                  <a href="#" class="head-links">Campus Life</a>
-                </header>
+                <header><a href="#" class="desktop-item">Campus Life</a></header>
+                <input type="checkbox" id="show-cl" />
+                <label for="show-cl" class="mobile-item link-head-lv2">
+                  <a href="#" class="links">Faculties</a>
+                </label>
+                <hr class="hr-header">
                 <ul class="mega-links">
                   <li>
-                    <a href="#" class="links">Student Services</a>
+                    <a href="#" class="links desktop-item">Student Services</a>
+                    <input type="checkbox" id="show-cl-ss" />
+                    <label for="show-cl-ss" class="mobile-item" style="margin-left: 40px;">
+                      <div class="text-ellips">Student Services</div>
+                    </label>
                     <ul class="sub-mega-links">
                       <li>
-                        <a href="#" class="sub-links">Resources</a>
+                        <a href="#" class="links desktop-item">Resources</a>
+                        <input type="checkbox" id="show-cl-ss-1" />
+                        <label for="show-cl-ss-1" class="mobile-item" style="margin-left: 40px;">
+                          <div class="text-ellips">Resources</div>
+                         </label>
                         <ul class="n-sub-mega-links">
                           <li>
                             <a href="#" class="n-sub-links">
@@ -242,32 +319,49 @@
           </div>
         </li>
         <li class="li-head">
-          <input type="checkbox" id="show-exp" />
-          <label for="show-exp" class="mobile-item">EXPLORE</label>
           <a href="#" class="desktop-item animated-border">EXPLORE</a>
+          <label for="show-exp" class="mobile-item link-head">
+            <a href="#">EXPLORE</a>
+          </label>
+          <input type="checkbox" id="show-exp" />
+          <hr class="hr-header">
           <div class="mega-box ddFadeSlow">
             <div class="content">
               <div class="row">
-                <header><a href="#">GOD</a></header>
+                <header class="head-links"><a href="#" class="desktop-item head-links">GOD</a></header>
+                <input type="checkbox" id="show-exp-god" />
+                <label for="show-exp-god" class="mobile-item link-head-lv2">
+                  <a href="#" class="links">GOD</a>
+                </label>
+                <hr class="hr-header">
                 <ul class="mega-links">
                   <li>
-                    <a href="#">Statement of Faith</a>
+                    <a href="#" class="links">Statement of Faith</a>
                   </li>
-                  <li><a href="#">Faith In Action</a></li>
-                  <li><a href="#">Morning Dew</a></li>
-                  <li><a href="#">Noon Day Prayer</a></li>
-                  <li><a href="#">Morning Too</a></li>
+                  <li><a href="#" class="links">Faith In Action</a></li>
+                  <li><a href="#" class="links">Morning Dew</a></li>
+                  <li><a href="#" class="links">Noon Day Prayer</a></li>
+                  <li><a href="#" class="links">Morning Too</a></li>
                 </ul>
               </div>
               <div class="row">
-                <header><a href="#">About</a></header>
+                <header class="head-links"><a href="#" class="desktop-item head-links">About</a></header>
+                <input type="checkbox" id="show-exp-about" />
+                <label for="show-exp-about" class="mobile-item link-head-lv2">
+                  <a href="#" class="links">About</a>
+                </label>
+                <hr class="hr-header">
                 <ul class="mega-links">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Mission Philosophy Goals</a></li>
-                  <li><a href="#">AUHS Accreditations</a></li>
-                  <li><a href="#">Board of Trustees</a></li>
+                  <li><a href="#" class="links">History</a></li>
+                  <li><a href="#" class="links">Mission Philosophy Goals</a></li>
+                  <li><a href="#" class="links">AUHS Accreditations</a></li>
+                  <li><a href="#" class="links">Board of Trustees</a></li>
                   <li>
-                    <a href="#">AUHS Staff</a>
+                    <a href="#" class="links desktop-item">AUHS Staff</a>
+                    <input type="checkbox" id="show-exp-about-1" />
+                    <label for="show-exp-about-1" class="mobile-item" style="margin-left: 40px;">
+                      <div class="text-ellips">AUHS Staff</div>
+                    </label>
                     <ul class="sub-mega-links">
                       <li>
                         <a href="#" class="sub-links">University President</a>
@@ -287,16 +381,16 @@
                 </ul>
               </div>
               <div class="row">
-                <header><a href="#">News</a></header>
-                <ul class="mega-links">
-                  <li><a href="#">University News</a></li>
-                </ul>
+                <header class="desktop-item"><a href="#">News</a></header>
+                <a href="#" class="item link-head-lv2">News</a>
+                <hr class="hr-header">
               </div>
             </div>
           </div>
         </li>
         <li class="li-head">
-          <a href="#" class="animated-border">FOUNDATION</a>
+          <a href="#" class="animated-border link-head">FOUNDATION</a>
+          <hr class="hr-header">
         </li>
       </ul>
     </div>

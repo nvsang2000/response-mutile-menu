@@ -59,12 +59,15 @@
   list-style: none;
 }
 
-.nav-links li a {
+.nav-links .li-head a {
   color: #000000;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
   padding: 9px 15px;
+}
+
+.link-head {
+  font-weight: 500;
 }
 
 .nav-links .mobile-item {
@@ -217,41 +220,76 @@
 
 /* =========== DEVICE TABLET AND MOBILE ============ */
 @media screen and (max-width: 970px) {
-/* =========== HANDLE DISPLAY============ */
+  /* =========== HANDLE DISPLAY============ */
   #menu-btn:checked ~ .nav-links {
     left: 0%;
   }
-  .nav-links {
-    left: 0%;
-  }
 
-  #show-p:checked + .mobile-item::after,
-  #show-exp:checked + .mobile-item::after,
-  #show-aca:checked + .mobile-item::after,
-  #show-p-sop:checked + .mobile-item::after,
-  #show-aca-son:checked + .mobile-item::after,
-  #show-aca-son-mos:checked + .mobile-item::after,
-  #show-aca-sop:checked + .mobile-item::after,
-  #show-aca-socr:checked + .mobile-item::after,
-  #show-aca-ge:checked + .mobile-item::after,
-  #show-aca-rs:checked + .mobile-item::after  {
-    content: "-";
+  .mobile-item::after {
+    content: "+";
+    font-size: 24px;
+    font-weight: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 20px;
   }
 
   #show-p:checked ~ .mega-box,
   #show-exp:checked ~ .mega-box {
     max-height: 100%;
-    border-top: 1px solid #d1d5db;
   }
 
-  
-  #show-aca:checked ~ .mega-links, 
-  #show-aca-son:checked + ul,
-  #show-aca-son-mos:checked + ul,
-  #show-aca-sop:checked + ul,
-  #show-aca-socr:checked + ul,
-  #show-aca-ge:checked + ul,
-  #show-aca-rs:checked + ul { 
+  #show-p:checked + .mobile-item::after,
+  #show-aca:checked + .mobile-item::after,
+  #show-p-sop:checked + .mobile-item::after,
+  #show-aca-son:checked + .mobile-item::after,
+  #show-aca-son-1:checked + .mobile-item::after,
+  #show-aca-son-2:checked + .mobile-item::after,
+  #show-aca-sop:checked + .mobile-item::after,
+  #show-aca-sop-1:checked + .mobile-item::after,
+  #show-aca-sop-2:checked + .mobile-item::after,
+  #show-aca-socr:checked + .mobile-item::after,
+  #show-aca-ge:checked + .mobile-item::after,
+  #show-aca-rs:checked + .mobile-item::after,
+  #show-ad:checked + .mobile-item::after,
+  #show-ad-aoa:checked + .mobile-item::after,
+  #show-f:checked + .mobile-item::after,
+  #show-cl:checked + .mobile-item::after,
+  #show-cl-ss:checked + .mobile-item::after,
+  #show-cl-ss-1:checked + .mobile-item::after,
+  #show-exp:checked + .mobile-item::after,
+  #show-exp-god:checked + .mobile-item::after,
+  #show-exp-about:checked + .mobile-item::after,
+  #show-exp-about-1:checked + .mobile-item::after {
+    content: "-";
+  }
+
+  #show-p:checked ~ .mega-box,
+  #show-aca:checked ~ .mega-links,
+  #show-aca-son:checked ~ .sub-mega-links,
+  #show-aca-son-1:checked ~ .n-sub-mega-links,
+  #show-aca-son-2:checked ~ .n-sub-mega-links,
+  #show-aca-sop:checked ~ .sub-mega-links,
+  #show-aca-sop-1:checked ~ .n-sub-mega-links,
+  #show-aca-sop-2:checked ~ .n-sub-mega-links,
+  #show-aca-socr:checked ~ .sub-mega-links,
+  #show-aca-ge:checked ~ .sub-mega-links,
+  #show-aca-rs:checked ~ .sub-mega-links,
+  #show-ad:checked ~ .mega-links,
+  #show-ad-aoa:checked ~ .sub-mega-links,
+  #show-f:checked ~ .mega-links,
+  #show-cl:checked ~ .mega-links,
+  #show-cl-ss:checked ~ .sub-mega-links,
+  #show-cl-ss-1:checked ~ .n-sub-mega-links,
+  #show-exp:checked ~ .mega-box,
+  #show-exp-god:checked ~ .mega-links,
+  #show-exp-about:checked ~ .mega-links,
+  #show-exp-about-1:checked ~ .sub-mega-links {
     display: block;
   }
 
@@ -279,24 +317,32 @@
     padding: 0px;
   }
 
-  .nav-links li:hover .mega-box {
-    box-shadow: none;
-  }
-
-  .nav-links li a {
-    color: #000000;
-    font-size: 18px;
-    padding: 0px 0px;
+  .link-head {
+    margin-left: 0px;
     font-weight: 400;
+    line-height: 20px;
   }
 
-  .nav-links .li-head, .head-links {
-    border-bottom: 1px solid #d1d5db;
+  .link-head-lv2 {
+    color: #3333;
+    margin-left: 40px;
+    font-weight: 300;
   }
 
-  .nav-links .li-head a,
-  .nav-links .li-head label {
-    margin-left: 10px;
+  .link-head-lv3 {
+    color: #3333;
+    margin-left: 80px;
+    font-weight: 300;
+  }
+
+  .link-head-lv2 .links {
+    font-weight:300;
+  }
+
+  hr.hr-header {
+    display: block;
+    border-top: 1px solid #d1d5db;
+    width: 100%;
   }
 
   .nav-links .mobile-item {
@@ -309,18 +355,22 @@
     text-align: left;
   }
 
-  .nav-links .mobile-item::after {
-    content: "+";
-    font-size: 24px;
-    font-weight: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
+  .nav-links .item {
+    font-size: 18px;
+    height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 40px;
-    width: 20px;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .text-ellips {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* width: 90%; */
   }
 
   .wrapper .btn {
@@ -333,7 +383,7 @@
     width: 100%;
     max-width: 80%;
     top: 0;
-    left: -100%;
+    /* left: -100%; */
     background: white;
     display: block;
     padding: 0px 0px 0px 0px;
@@ -344,6 +394,7 @@
 
   .nav-links li:hover .mega-box {
     border-top: none;
+    box-shadow: none;
   }
 
   .mega-box {
@@ -364,33 +415,25 @@
     padding: 0px 0px;
   }
 
-  .content .row header a, .content .row label {
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-    margin-left: 20px;
-  }
-
+  .content .row header a,
+  .content .row label,
   .mega-box .content .mega-links .links {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #333;
-    margin-left: 40px;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
-  .sub-mega-links li a {
-    font-size: 16px;
-    font-weight: 200;
-    margin-left: 40px;
-    padding: 10px 0px 10px 0px;
-  }
-
+  .sub-mega-links li a,
   .mega-links .sub-mega-links li a {
     font-size: 16px;
-    font-weight: 200;
-    margin-left: 40px;
-    padding: 10px 0px 10px 0px;
+    font-weight: 400;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .mega-links .sub-mega-links,
+  .mega-links .sub-mega-links .n-sub-mega-links {
+    margin-left: 0px;
   }
 
   .mega-box .content .row {
@@ -403,6 +446,8 @@
   }
 }
 
-#header-bar input {
+#header-bar input,
+.hr-header,
+.item {
   display: none;
 }
