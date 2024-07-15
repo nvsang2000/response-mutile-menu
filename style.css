@@ -236,7 +236,7 @@
     justify-content: center;
     align-items: center;
     height: 40px;
-    width: 20px;
+    width: 10px;
   }
 
   #show-p:checked ~ .mega-box,
@@ -264,6 +264,7 @@
   #show-cl-ss-1:checked + .mobile-item::after,
   #show-exp:checked + .mobile-item::after,
   #show-exp-god:checked + .mobile-item::after,
+  #show-exp-god-1:checked + .mobile-item::after,
   #show-exp-about:checked + .mobile-item::after,
   #show-exp-about-1:checked + .mobile-item::after {
     content: "-";
@@ -288,6 +289,7 @@
   #show-cl-ss-1:checked ~ .n-sub-mega-links,
   #show-exp:checked ~ .mega-box,
   #show-exp-god:checked ~ .mega-links,
+  #show-exp-god-1:checked ~ .sub-mega-links,
   #show-exp-about:checked ~ .mega-links,
   #show-exp-about-1:checked ~ .sub-mega-links {
     display: block;
