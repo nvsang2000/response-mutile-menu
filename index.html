@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -16,7 +22,6 @@
             alt=""
           />
         </div>
-        
         <input type="checkbox" name="slider" id="menu-btn" />
         <label for="menu-btn" class="btn menu-btn">
           <span>
@@ -943,9 +948,9 @@
             >
             <hr class="hr-header" />
           </li>
-          <li  id="li-head-btn" class="li-head">
+          <li id="li-head-btn" class="li-head">
             <div class="btn-head">
-              <a href="/"  class="btn-link">Request information</a>
+              <a href="/" class="btn-link">Request information</a>
             </div>
           </li>
         </ul>
@@ -969,8 +974,7 @@
 
     <!-- Handle javascript -->
     <script>
-
-       // Handle scroll top
+      // Handle scroll top
       window.onscroll = function () {
         scrollFunction();
       };
@@ -986,11 +990,11 @@
           navbar.classList.remove("scrolled");
         }
       }
-     
+
       // Handle display overlay
-      document.querySelector('.overlay').addEventListener('click', function () {
-            document.getElementById('menu-btn').checked = false;
-        });
+      document.querySelector(".overlay").addEventListener("click", function () {
+        document.getElementById("menu-btn").checked = false;
+      });
     </script>
   </body>
 </html>
