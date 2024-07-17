@@ -184,6 +184,11 @@
   line-height: 45px;
 }
 
+.mega-box .content .col-3 {
+  width: calc(20% - 30px);
+  line-height: 45px;
+}
+
 .ddFadeSlow {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -205,14 +210,30 @@
   font-weight: 600;
   line-height: 48px;
   text-align: left;
+  /* margin-left: 15px; */
 }
 
 .content .row header a:hover {
   color: #000000;
 }
 
-.content .row .mega-links {
+.content .row .mega-links li a {
   text-align: left;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.content .row .mega-links .sub-mega-links li a {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.sub-mega-links .n-sub-mega-links li a {
+  font-size: 16px;
+  line-height: 25px;
+  color: #3a3b3c;
+  font-weight: 200;
 }
 
 /* =========== LINK CONTENT ============ */
@@ -229,18 +250,9 @@
   margin-left: 20px;
 }
 
-.mega-links .sub-mega-links li a {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 20px;
-}
 
-.sub-mega-links .n-sub-mega-links li a {
-  font-size: 16px;
-  line-height: 25px;
-  color: #3a3b3c;
-  font-weight: 400;
-}
+
+
 
 .n-sub-links,
 .sub-links,
@@ -551,13 +563,18 @@
   .sub-mega-links li a,
   .mega-links .sub-mega-links li a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     padding: 0px 0px 0px 0px;
   }
 
   .mega-links .sub-mega-links,
   .mega-links .sub-mega-links .n-sub-mega-links {
     margin-left: 0px;
+    font-weight: 200;
+  }
+
+  .content .row .mega-links .sub-mega-links li a {
+    font-weight: 200;
   }
 
 
