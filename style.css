@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+	padding: 0px !important;
+	margin: 0px !important;
 }
 
 .video-container {
@@ -210,7 +211,7 @@
   font-weight: 600;
   line-height: 48px;
   text-align: left;
-  /* margin-left: 15px; */
+  margin-left: 15px;
 }
 
 .content .row header a:hover {
@@ -314,14 +315,13 @@
   .mobile-item::after {
     content: "+";
     font-size: 24px;
-    font-weight: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 46px;
     width: 10px;
   }
 
@@ -479,12 +479,11 @@
   hr.hr-header {
     display: block;
     border-top: 1px solid #d1d5db;
-    width: 100%;
   }
 
   .nav-links .mobile-item {
     font-size: 18px;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -511,7 +510,7 @@
     height: 100vh;
     width: 100%;
     max-width: 60%;
-    margin-left: 0px;
+    margin: 0px;
     top: 0;
     left: -100%;
     background: white;
@@ -563,18 +562,18 @@
   .sub-mega-links li a,
   .mega-links .sub-mega-links li a {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     padding: 0px 0px 0px 0px;
   }
 
   .mega-links .sub-mega-links,
   .mega-links .sub-mega-links .n-sub-mega-links {
     margin-left: 0px;
-    font-weight: 200;
+    font-weight: 400;
   }
 
   .content .row .mega-links .sub-mega-links li a {
-    font-weight: 200;
+    font-weight: 400;
   }
 
 
