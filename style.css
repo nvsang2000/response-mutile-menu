@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
-	padding: 0px !important;
-	margin: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .video-container {
@@ -47,6 +47,13 @@ main {
 #li-head-foundation,
 #li-head-btn {
   padding: 0px 10px 0px 10px;
+}
+
+#li-head-home a span,
+#li-head-programs a span,
+#li-head-explore a span,
+#li-head-foundation a span{
+  font-weight: 500;
 }
 
 #header-bar .btn-head .btn-link:hover {
@@ -251,10 +258,6 @@ main {
   margin-left: 20px;
 }
 
-
-
-
-
 .n-sub-links,
 .sub-links,
 .links {
@@ -436,6 +439,10 @@ main {
     color: #000000;
   }
 
+  .animated-border::after {
+    display: none;
+  }
+
   .mega-box {
     border-top: none;
     margin-top: 0px;
@@ -444,7 +451,7 @@ main {
 
   .link-head {
     margin-left: 0px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 20px;
   }
 
@@ -555,7 +562,7 @@ main {
 
   .mega-links,
   .sub-mega-links,
-  .n-sub-mega-links{
+  .n-sub-mega-links {
     padding-left: 0px;
   }
 
@@ -575,7 +582,6 @@ main {
   .content .row .mega-links .sub-mega-links li a {
     font-weight: 400;
   }
-
 
   .mega-box .content .row {
     width: 100%;
