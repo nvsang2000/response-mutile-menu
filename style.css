@@ -8,18 +8,13 @@ main {
   margin: 0px !important;
 }
 
-.video-container {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
 
 /* =========== Navigation ============ */
 #header-bar {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background-color: transparent;
+  background-color: #b1b1b1;
 }
 
 #header-bar .btn-head {
@@ -52,19 +47,13 @@ main {
 #li-head-home a span,
 #li-head-programs a span,
 #li-head-explore a span,
-#li-head-foundation a span{
+#li-head-foundation a span {
   font-weight: 500;
 }
 
 #header-bar .btn-head .btn-link:hover {
   background-color: #494c53;
   color: #fff;
-}
-
-#header-bar:hover {
-  background-color: white;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 #header-bar.scrolled {
@@ -80,7 +69,7 @@ main {
 
 #header-bar .wrapper {
   position: relative;
-  max-width: 1240px;
+  max-width: 1440px;
   padding: 0px 30px;
   height: 70px;
   line-height: 70px;
@@ -96,6 +85,7 @@ main {
   object-fit: cover;
   width: 300px;
   height: 40px;
+  margin-left: 10px;
 }
 
 .wrapper .nav-links {
@@ -131,7 +121,6 @@ main {
   opacity: 1;
   visibility: visible;
   border-top: 2px solid #d1d5db;
-  width: 100%;
   background-color: #ffffff;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -169,21 +158,18 @@ main {
 .mega-box {
   position: fixed;
   left: 0;
-  width: 100%;
   padding: 0 30px;
   top: 85px;
   opacity: 0;
   visibility: hidden;
   animation-duration: 0.3s;
   overflow: auto;
-  height: 80%;
   margin-top: -10px;
 }
 
 .mega-box .content {
   padding: 20px 20px;
   display: flex;
-  width: 100%;
   justify-content: center;
 }
 
@@ -218,7 +204,6 @@ main {
   font-weight: 600;
   line-height: 48px;
   text-align: left;
-  margin-left: 15px;
 }
 
 .content .row header a:hover {
@@ -227,7 +212,6 @@ main {
 
 .content .row .mega-links li a {
   text-align: left;
-  margin-left: 0px;
   font-size: 20px;
 }
 
@@ -245,17 +229,16 @@ main {
 }
 
 /* =========== LINK CONTENT ============ */
+.mega-links {
+  margin-left: -40px;
+  text-align: left;
+}
 .mega-links .links {
   color: #000000;
   font-size: 20px;
   display: block;
   font-weight: 600;
   line-height: 25px;
-}
-
-.mega-links .sub-mega-links,
-.mega-links .sub-mega-links .n-sub-mega-links {
-  margin-left: 20px;
 }
 
 .n-sub-links,
@@ -282,10 +265,17 @@ main {
 @media (max-width: 1024px) {
   #header-bar .wrapper .logo img {
     text-align: center;
-    margin-left: 10px;
     object-fit: cover;
     width: 200px;
     height: 26px;
+  }
+
+  #li-head-home,
+  #li-head-programs,
+  #li-head-explore,
+  #li-head-foundation,
+  #li-head-btn {
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -355,7 +345,8 @@ main {
   #show-exp-god:checked + .mobile-item::after,
   #show-exp-god-1:checked + .mobile-item::after,
   #show-exp-about:checked + .mobile-item::after,
-  #show-exp-about-1:checked + .mobile-item::after {
+  #show-exp-about-1:checked + .mobile-item::after,
+  #show-exp-news:checked + .mobile-item::after {
     content: "-";
   }
 
@@ -380,7 +371,8 @@ main {
   #show-exp-god:checked ~ .mega-links,
   #show-exp-god-1:checked ~ .sub-mega-links,
   #show-exp-about:checked ~ .mega-links,
-  #show-exp-about-1:checked ~ .sub-mega-links {
+  #show-exp-about-1:checked ~ .sub-mega-links,
+  #show-exp-news:checked ~ .mega-links {
     display: block;
   }
 
@@ -403,7 +395,6 @@ main {
 
   #header-bar .wrapper .logo img {
     text-align: center;
-    margin-left: 10px;
     object-fit: cover;
     width: 200px;
     height: 26px;
@@ -450,7 +441,6 @@ main {
   }
 
   .link-head {
-    margin-left: 0px;
     font-weight: 500;
     line-height: 20px;
   }
@@ -560,6 +550,10 @@ main {
     padding: 0px 0px 0px 0px;
   }
 
+  .mega-links {
+    margin-left: 0px;
+  }
+
   .mega-links,
   .sub-mega-links,
   .n-sub-mega-links {
@@ -575,7 +569,6 @@ main {
 
   .mega-links .sub-mega-links,
   .mega-links .sub-mega-links .n-sub-mega-links {
-    margin-left: 0px;
     font-weight: 400;
   }
 
@@ -597,6 +590,9 @@ main {
 @media (max-width: 480px) {
   .wrapper .nav-links {
     max-width: 85%;
+  }
+    .wrapper .logo img {
+        margin-left: 10px;
   }
 }
 
